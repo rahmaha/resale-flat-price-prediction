@@ -73,15 +73,15 @@ Then open terminal and go to the path of folder which contain this project (Pipf
 This project only deployed on docker, because of that you need to have docker installed on your laptop. 
 - first build docker image
 `docker build -t hdb-price-predictor .`
-![first step]('..\resale-flat-price-prediction\images\picture_1.png')
+
 
 - second run docker image
 `docker run -p 9696:9696 hdb-price-predictor`
-![second step]('..\resale-flat-price-prediction\images\picture_2.png')
+
 
 - third open new terminal, run pipenv shell on the same path
-![third step]('..\resale-flat-price-prediction\images\picture_3.png')
+
 
 - fourth type `python test.py`. test.py has the data that I want to test.
-![fourth step]('..\resale-flat-price-prediction\images\picture_4.png')
 
+you can find the pictures on images folders
