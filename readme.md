@@ -34,3 +34,54 @@ I did try multiple models from linear regression, tress model (random forest, de
 
 The model that I choose is **LightGBM** with results are Validation RMSE: 0.07363337695202878
 Test RMSE: 0.07342504700520996
+
+
+## How to run this project
+
+1. First, you can clone the repo using the following command:
+
+```sh
+   git clone https://github.com/rahmaha/mlzoomcamp-midterm.git
+```
+
+or click at the `code button` and chose download zip
+
+2. To run the project, you need to have python, jupyter notebook and pipenv in your computer/laptop. This project also has a few of packages that needed that detailed in Pipfile/Pipfile.lock. To install all these packages, you can use pipenv to create separete environtment for this project. Make sure you already installed it or if not you can run this command:
+
+```sh
+   pip install pipenv
+```
+
+Then open terminal and go to the path of folder which contain this project (Pipfile/Pipfile.lock), and then run this command to install all packages needed:
+
+```sh
+   pipenv install
+```
+
+3. Now that you already installed it, you can start using this new virtual environtment for this project, run this following command to activate it:
+
+```sh
+   pipenv shell
+```
+
+4. Next is run the scripts like you normally do.
+
+<!-- How to submit request to the web service-->
+
+## How to submit request to the web service
+
+This project only deployed on docker, because of that you need to have docker installed on your laptop. 
+- first build docker image
+`docker build -t hdb-price-predictor .`
+![first step]('..\resale-flat-price-prediction\images\picture_1.png')
+
+- second run docker image
+`docker run -p 9696:9696 hdb-price-predictor`
+![second step]('..\resale-flat-price-prediction\images\picture_2.png')
+
+- third open new terminal, run pipenv shell on the same path
+![third step]('..\resale-flat-price-prediction\images\picture_3.png')
+
+- fourth type `python test.py`. test.py has the data that I want to test.
+![fourth step]('..\resale-flat-price-prediction\images\picture_4.png')
+
