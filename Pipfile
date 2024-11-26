@@ -13,6 +13,7 @@ xgboost = "*"
 lightgbm = "*"
 waitress = "*"
 requests = "*"
+flask = "*"
 
 [dev-packages]
 
