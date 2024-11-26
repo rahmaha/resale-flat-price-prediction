@@ -4,8 +4,9 @@ from flask import Flask, request, jsonify
 from datetime import datetime
 
 # File paths
-dv_path = r"./models/dv.bin"
-model_path = r"./models/model.bin"
+dv_path = "dv.bin"
+model_path = "model.bin"
+
 
 # Load files
 
